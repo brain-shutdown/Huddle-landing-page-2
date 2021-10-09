@@ -1,0 +1,88 @@
+:root {
+    --color-primary: hsl(322, 100%, 66%);
+    --color-light-cyan: hsl(193, 100%, 96%);
+    --color-dark-cyan: hsl(192, 100%, 9%);
+    --color-gray: hsl(208, 11%, 55%);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* ************ */
+/* TYPOGRAPHY */
+/* ************ */
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 0.2px;
+    line-height: 1.5;
+    color: var(--color-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 980px) {
+}
+
+/* ************ */
+/* CONTAINERS */
+/* ************ */
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/* ************ */
+/* GRID */
+/* ************ */
+.grid {
+    display: grid;
+}
+
+@media screen and (min-width: 980px) {
+    .grid--1x2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid--1x3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
