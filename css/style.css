@@ -34,7 +34,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 2;
     color: var(--color-body-black);
 }
@@ -47,18 +47,17 @@ h5,
 h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    line-height: 1.1;
     margin-bottom: 2rem;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 @media screen and (min-width: 760px) {
@@ -105,10 +104,10 @@ h3 {
 /* ************ */
 .btn {
     font-weight: 600;
-    font-size: 1rem;
     text-align: center;
     white-space: nowrap;
     text-decoration: none;
+    width: 100%;
     max-width: 480px;
     display: inline-block;
     border-radius: 40px;
@@ -119,7 +118,6 @@ h3 {
 }
 
 .btn--primary {
-    width: 60%;
     padding: 1.5rem 0;
     background: var(--color-primary);
     color: #fff;
@@ -131,7 +129,6 @@ h3 {
 }
 
 .btn--secondary {
-    width: 100%;
     padding: 1rem 0;
     background: var(--color-secondary);
     color: var(--color-body-black);
@@ -146,17 +143,6 @@ h3 {
     transform: scale(0.98);
     outline: 0;
     box-shadow: 0px 0px 15px -5px var(--color-shadow);
-}
-
-@media screen and (min-width: 380px) {
-    .btn {
-        font-size: 1.6rem;
-    }
-}
-@media screen and (min-width: 760px) {
-    .btn {
-        max-width: 280px;
-    }
 }
 
 /* ************ */
@@ -179,17 +165,22 @@ h3 {
 }
 
 /* ************ */
-/* FEATURE */
+/* CARD */
 /* ************ */
-
-.feature {
-    display: grid;
-    align-items: center;
-    gap: 5rem;
+.card {
     padding: 5rem;
     margin: 3rem auto;
     border-radius: 10px;
     box-shadow: 0 0 20px -10px var(--color-shadow);
+}
+
+/* ************ */
+/* FEATURE */
+/* ************ */
+.feature {
+    display: grid;
+    align-items: center;
+    gap: 5rem;
 }
 
 .feature__image {
@@ -222,4 +213,17 @@ h3 {
     .feature:nth-of-type(odd) .feature__image {
         order: 2;
     }
+}
+
+/* ************ */
+/* CALLOUT */
+/* ************ */
+.callout {
+    max-width: 800px;
+    text-align: center;
+}
+
+.callout__heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
