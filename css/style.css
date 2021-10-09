@@ -62,9 +62,6 @@ h3 {
     font-size: 2rem;
 }
 
-@media screen and (min-width: 980px) {
-}
-
 /* ************ */
 /* CONTAINERS */
 /* ************ */
@@ -146,4 +143,29 @@ h3 {
     .btn {
         max-width: 280px;
     }
+}
+
+/* ************ */
+/* BLOCK */
+/* ************ */
+
+.block {
+    --padding-vertical: 1rem;
+    padding: var(--padding-vertical) 3rem;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
+.block__picture {
+    margin-bottom: 5rem;
+}
+
+.block__header {
+    max-width: 600px;
+    margin: 2rem auto 4rem;
+    text-align: center;
+}
+
+.block__header p {
+    opacity: 0.5;
 }
