@@ -34,9 +34,8 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 1.8rem;
-    letter-spacing: 0.2px;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 2;
     color: var(--color-body-black);
 }
 
@@ -53,13 +52,13 @@ h6 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 h3 {
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 /* ************ */
@@ -77,7 +76,7 @@ h3 {
     display: grid;
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 760px) {
     .grid--1x2 {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -156,16 +155,38 @@ h3 {
     text-align: center;
 }
 
-.block__picture {
-    margin-bottom: 5rem;
-}
-
 .block__header {
     max-width: 600px;
-    margin: 2rem auto 4rem;
     text-align: center;
 }
 
 .block__header p {
     opacity: 0.5;
+}
+
+/* ************ */
+/* CARD */
+/* ************ */
+
+.card {
+    padding: 5rem;
+    margin: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px -10px var(--color-shadow);
+}
+
+.card.grid {
+    justify-items: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+@media screen and (min-width: 760px) {
+    .card.grid--1x2 {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .card .block__header {
+        text-align: left;
+    }
 }
